@@ -3,14 +3,15 @@ const axios = require('axios');
 const bot = new Discord.Client();
 const fetch = require('node-fetch');
 const weather = require('openweather-apis');
-const weather_token = '817dcdf436ef9f688b166e04e7b06031';
+const weather_token = process.env.weatherToken;
+const discordToken = process.env.discordToken;
 let cityName = 'tokyo';
 let api_url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + weather_token;
 
 
 // const response = await fetch(api_url);
 
-const token = 'Njk0MTQ5OTQzOTMzNDAzMTc4.XoHddQ.o2qgXejlNodlAewxoZGFtmJCsH8';
+
 // const date; 
 
 const prefix = '!';
@@ -67,6 +68,9 @@ if(command === 'weather is good' || 'Muske' || 'Midioka'){
 });
 
 
+bot.login(discordToken);
+
+
 // if(command === 'weather is good'){
 //     let getWeather = async () => {
 //         let response = await axios.get(api_url);
@@ -100,5 +104,4 @@ if(command === 'weather is good' || 'Muske' || 'Midioka'){
 //     }
 // })
 
-bot.login(token);
 

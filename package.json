@@ -1,0 +1,28 @@
+{
+  "name": "old_bot",
+  "version": "1.0.0",
+  "description": "Weather bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mynameisnyke/old_bot.git"
+  },
+  "keywords": [
+    "yoshi"
+  ],
+  "author": "Yoshitsugu Kosaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mynameisnyke/old_bot/issues"
+  },
+  "homepage": "https://github.com/mynameisnyke/old_bot#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "discord.js": "^12.1.1",
+    "fetch": "^1.1.0",
+    "openweather-apis": "^4.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  dev:
+    build: .
+    volumes:
+      - .:/usr/app
+    environment:
+        - discordToken=${discordToken}
+        - weatherToken=${weatherToken}
